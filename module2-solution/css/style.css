@@ -1,76 +1,78 @@
 * {
-    box-sizing: border-box;
-    font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    font: 300 14px/1.6 "OpenSansRegular", sans-serif, Helvetica, Arial;
-    color: #000000;
-    transition: all .25s ease-in .2s;
+  font: 300 14px/1.6 "OpenSansRegular", sans-serif, Helvetica, Arial;
+  color: #000000;
+  transition: all 0.25s ease-in 0.2s;
 }
 
 /* 1rem = 10px */
 body,
 html {
-    margin: 0;
+  margin: 0;
 }
 
 h1 {
-    text-align: center;
-    font-size: 3rem;
+  text-align: center;
+  font-size: 3rem;
 }
 
 .container {
-    width: 100%;
-    padding: 0 15px;
+  width: 100%;
+  padding: 0 15px;
+  padding-left: -15px;
+  padding-right: -15px;
 }
 
 .row {
-    margin-bottom: 15px;
-    margin: 0 -15px;
-    padding: 0 15px;
-
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  margin-bottom: 15px;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.row>div {
-    border: 2px solid #000;
-    background-color: aqua;
+.row > div {
+  border: 1rem solid #ffffff;
+  background-color: gray;
 }
 
-@media (min-width:768px) {
-    .col-sm-12 {
-        width: 100%;
-    }
+@media (min-width: 768px) {
+  .col-sm-12 {
+    width: 100%;
+  }
 
-    .col-sm-6 {
-        width: 50%;
-    }
+  .col-sm-6 {
+    width: 50%;
+  }
 }
 
-@media (min-width:992px) and (max-width:1199px) {
-    .col-md-4 {
-        width: 33.3%;
-    }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .col-md-4 {
+    width: 33.3%;
+  }
 
-    .col-md-6 {
-        width: 50%;
-    }
+  .col-md-6 {
+    width: 50%;
+  }
 
-    .col-md-12 {
-        width: 100%;
-    }
+  .col-md-12 {
+    width: 100%;
+  }
 }
 
-@media (min-width:1200px) {
-    .col-lg-4 {
-        width: 33.3%;
-    }
+@media (min-width: 1200px) {
+  .col-lg-4 {
+    width: 33.3%;
+  }
 }
