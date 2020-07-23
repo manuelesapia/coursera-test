@@ -3,10 +3,12 @@
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
+
 html {
   font-size: 62.5%;
   margin: 0;
 }
+
 /* 1rem = 10px */
 
 body {
@@ -15,8 +17,29 @@ body {
   transition: all 0.25s ease-in 0.2s;
   margin: 0;
 }
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    display: none;
+  }
+}
+
+nav.navbar-default {
+  background-color: gray;
+}
+
+nav.navbar-default .navbar-brand {
+  color: #000;
+}
+
+
+nav.navbar-default .navbar-nav>li>a:first-child {
+  color: #000;
+}
+
+
+
 h1 {
-  text-align: center;
   font-size: 3rem;
   margin: 5rem 0;
 }
@@ -33,7 +56,7 @@ h1 {
   margin-left: 15px;
 }
 
-.row > div {
+.row>div {
   position: relative;
   padding-right: 15px;
   padding-left: 15px;
@@ -53,14 +76,17 @@ h1 {
   background-color: pink;
   color: #000000;
 }
+
 .row h2.beef {
   background-color: red;
   color: #fff;
 }
+
 .row h2.sushi {
   background-color: yellow;
   color: #000000;
 }
+
 .row p {
   margin: 0;
   color: #000;
