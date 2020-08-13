@@ -18,7 +18,6 @@
 //     console.log("hello " + names[i]);
 // }
 
-var names2 = ["jack", "manuel", "david"];
 
 // var myObj = {
 //     name: "manuel",
@@ -31,38 +30,46 @@ var names2 = ["jack", "manuel", "david"];
 // }
 
 
-for (var name in names2) {
-    console.log("hello " + names2[name]);
+var names = ["ack", "Richard", "David", "ames"];
+
+for (var name in names) {
+
+    if (names.find(a => a.includes('j') || a.includes('J'))) {
+        console.log("Goodbye " + names[name]);
+    } else {
+        console.log("Hello " + names[name]);
+    }
+
 }
 
 
 
 
 
-var x = 4,
-    y = 4;
+// var x = 4,
+//     y = 4;
 
-if (x === y) {
-    console.log("x='4' is equal to y=4");
-} else {
-    console.log("is NOT equal to y=4");
-}
+// if (x === y) {
+//     console.log("x='4' is equal to y=4");
+// } else {
+//     console.log("is NOT equal to y=4");
+// }
 
-function a() {
-    return {
-        name: "manuele",
-    };
-}
+// function a() {
+//     return {
+//         name: "manuele",
+//     };
+// }
 
-console.log(a());
+// console.log(a());
 
-//for loop
 
-var sum = 0;
+// var sum = 0;
 
-for (var i = 0; i < 10; i++) {
-    console.log(i);
-    sum = sum + i;
-}
+// for (var i = 0; i < 10; i++) {
+//     console.log(i);
+//     sum = sum + i;
 
-console.log("sum of 0 till 9 is : " + sum);
+// }
+
+// console.log("sum of 0 till 9 is : " + sum);
