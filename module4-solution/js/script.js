@@ -30,17 +30,34 @@
 // }
 
 
-var names = ["ack", "Richard", "David", "ames"];
+
+
+
+var names = ["Richard", "David", "Arek", "jack"];
+
+var startWithLowerJ = "j";
 
 for (var name in names) {
 
-    if (names.find(a => a.includes('j') || a.includes('J'))) {
+    if (names.find(v => startWithLowerJ === v)) {
         console.log("Goodbye " + names[name]);
     } else {
         console.log("Hello " + names[name]);
     }
 
 }
+
+
+
+// if (names.find(v => startWithUpperJ === v)) {
+//     console.log("Goodbye " + names[name]);
+// } else if (names.some(v => startWithLowerJ === v)) {
+//     console.log("Goodbye " + names[name]);
+// } else {
+//     console.log("Hello " + names[name]);
+// }
+
+
 
 
 
