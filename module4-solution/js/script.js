@@ -31,34 +31,19 @@
 
 
 
+var names = ["Yaakov", "John", "jack", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "jason"];
 
+for (var i = 0; i < names.length; i++) {
 
-var names = ["Richard", "David", "Arek", "jack"];
+    var firstLetter = "J";
 
-var startWithLowerJ = "j";
-
-for (var name in names) {
-
-    if (names.find(v => startWithLowerJ === v)) {
-        console.log("Goodbye " + names[name]);
+    if (names[i].charAt().toLowerCase() == firstLetter.toLowerCase()) {
+        console.log("Good Bye " + names[i]);
     } else {
-        console.log("Hello " + names[name]);
+        console.log("Hello " + names[i]);
+
     }
-
 }
-
-
-
-// if (names.find(v => startWithUpperJ === v)) {
-//     console.log("Goodbye " + names[name]);
-// } else if (names.some(v => startWithLowerJ === v)) {
-//     console.log("Goodbye " + names[name]);
-// } else {
-//     console.log("Hello " + names[name]);
-// }
-
-
-
 
 
 
