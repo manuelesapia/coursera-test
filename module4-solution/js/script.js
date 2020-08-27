@@ -38,10 +38,9 @@ for (var i = 0; i < names.length; i++) {
     var firstLetter = "J";
 
     if (names[i].charAt().toLowerCase() == firstLetter.toLowerCase()) {
-        console.log("Good Bye " + names[i]);
+        byeSpeaker.speak(names[i]);
     } else {
-        console.log("Hello " + names[i]);
-
+        helloSpeaker.speak(names[i]);
     }
 }
 
